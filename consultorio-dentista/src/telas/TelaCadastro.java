@@ -6,7 +6,7 @@ import javax.swing.border.EmptyBorder;
 
 public class TelaCadastro extends JFrame {
 
-	private JPanel contentPane;
+	private JPanel contentPane;//
 
 	public TelaCadastro() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
