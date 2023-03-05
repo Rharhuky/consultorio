@@ -17,9 +17,8 @@ import javax.swing.border.EmptyBorder;
 import classes_auxiliares.Constantes;
 import javax.swing.JPasswordField;
 
-public class TelaLogin extends JFrame {
+public class TelaLogin extends TelaPadrao {
 
-	private JPanel painelPrincipal;
 	private JTextField txtFEmail;
 	private JLabel lblEsqueciMinhaSenha ;
 	private JButton btnLogin;
@@ -28,14 +27,6 @@ public class TelaLogin extends JFrame {
 	
 	public TelaLogin() {
 
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 499, 561);
-		painelPrincipal = new JPanel();
-		painelPrincipal.setBackground(Constantes.corFundo);
-		painelPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		setContentPane(painelPrincipal);
-		painelPrincipal.setLayout(null);
 
 		JLabel lblTelaLogin = new JLabel("Tela Login");
 		lblTelaLogin.setFont(Constantes.tipoFonteTitulo);
@@ -72,12 +63,12 @@ public class TelaLogin extends JFrame {
 		adicionarOuvintes();
 
 
-		this.setLocationRelativeTo(null);
+		
 		this.setVisible(true);
 
 	}
 
-	private void adicionarOuvintes() {
+	public void adicionarOuvintes() {
 
 		this.lblEsqueciMinhaSenha.addMouseListener(new MouseAdapter() {
 
@@ -112,8 +103,7 @@ public class TelaLogin extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-					
-				
+				//lógica de login
 			}
 		});
 		

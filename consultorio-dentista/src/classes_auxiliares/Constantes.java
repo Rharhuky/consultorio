@@ -21,7 +21,8 @@ public class Constantes {
 	
 	public static int larguraTelaApresentacao = 561;
 
-	//////oiwewdedeed
+	//////medidas telas Normais
+	
 	
 	
 }
