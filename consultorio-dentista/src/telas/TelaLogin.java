@@ -15,14 +15,15 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import classes_auxiliares.Constantes;
+import javax.swing.JPasswordField;
 
 public class TelaLogin extends JFrame {
 
 	private JPanel painelPrincipal;
 	private JTextField txtFEmail;
-	private JTextField txtFSenha;
 	private JLabel lblEsqueciMinhaSenha ;
 	private JButton btnLogin;
+	private JPasswordField passwordField;
 	//
 	
 	public TelaLogin() {
@@ -46,11 +47,6 @@ public class TelaLogin extends JFrame {
 		painelPrincipal.add(txtFEmail);
 		txtFEmail.setColumns(10);
 
-		txtFSenha = new JTextField();
-		txtFSenha.setColumns(10);
-		txtFSenha.setBounds(169, 234, 188, 36);
-		painelPrincipal.add(txtFSenha);
-
 		JLabel lblEmail = new JLabel("Email");
 		lblEmail.setFont(Constantes.tipoFonteTexto);
 		lblEmail.setBounds(54, 169, 70, 25);
@@ -58,7 +54,7 @@ public class TelaLogin extends JFrame {
 
 		JLabel lblSenha = new JLabel("Senha");
 		lblSenha.setFont(Constantes.tipoFonteTexto);
-		lblSenha.setBounds(54, 242, 70, 25);
+		lblSenha.setBounds(54, 225, 70, 25);
 		painelPrincipal.add(lblSenha);
 
 		btnLogin = new JButton("Login");
@@ -68,6 +64,10 @@ public class TelaLogin extends JFrame {
 		lblEsqueciMinhaSenha = new JLabel("esqueci minha senha");
 		lblEsqueciMinhaSenha.setBounds(221, 283, 150, 23);
 		painelPrincipal.add(lblEsqueciMinhaSenha);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(169, 217, 188, 36);
+		painelPrincipal.add(passwordField);
 
 		adicionarOuvintes();
 
@@ -121,5 +121,4 @@ public class TelaLogin extends JFrame {
 
 
 	}
-
 }
