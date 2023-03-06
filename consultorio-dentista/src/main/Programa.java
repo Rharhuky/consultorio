@@ -1,8 +1,10 @@
  package main;
 
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
+import telas.TelaCadastro;
 import telas.TelaLogin;
 
 public class Programa {
@@ -17,10 +19,11 @@ public class Programa {
 		        }
 		    }
 		} catch (Exception e) {
-		    // If Nimbus is not available, you can set the GUI to another look and feel.
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		
 		new TelaLogin();
+		new TelaCadastro();
 	}
 	
 }

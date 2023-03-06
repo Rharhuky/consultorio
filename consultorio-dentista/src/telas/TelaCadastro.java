@@ -24,12 +24,6 @@ public class TelaCadastro extends TelaPadrao {
 
 	public TelaCadastro() {
 
-		adicionarLbl();
-		adicionarBtn();
-		adicionarTxtFields();
-		adicionarOuvintes();
-
-		this.setVisible(true);
 
 	}
 

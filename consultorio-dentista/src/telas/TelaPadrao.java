@@ -20,7 +20,17 @@ public abstract class TelaPadrao extends JFrame {
 		setContentPane(painelPrincipal);
 		painelPrincipal.setLayout(null);
 		
+		this.setResizable(false);
 		this.setLocationRelativeTo(null);
+		
+		adicionarLbl();
+		adicionarBtn();
+		adicionarTxtFields();
+		adicionarOuvintes();
+		
+		this.setVisible(true);
+		
+		
 		
 	}
 
